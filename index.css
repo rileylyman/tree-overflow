@@ -1,0 +1,58 @@
+body {
+  background: #22272e;
+  color: rgb(118, 131, 144);
+  padding: 0;
+}
+
+h1 {
+  color: rgb(173, 186, 199);
+}
+
+#files {
+  border: 1px solid rgb(118, 131, 144);
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+div.file {
+  padding: 1rem;
+  border-top: 1px solid rgb(118, 131, 144);
+  border-bottom: none;
+  display: flex;
+  align-items: begin;
+  justify-content: space-between;
+}
+
+div.file:first-of-type {
+  border-top: none;
+}
+
+div.file:hover {
+  background: #2d333b;
+}
+
+div.file > .name {
+  flex: 2 2 0;
+}
+
+div.file > .commit-msg {
+  flex: 4 4 0;
+}
+
+div.file > .modified {
+  flex: 1 1 0;
+}
+
+div.file > span > a {
+  text-decoration: none;
+  color: rgb(173, 186, 199);
+}
+
+div.file > span > a:hover {
+  text-decoration: underline;
+  color: lightskyblue;
+}
+
+div.file > span.modified {
+  text-align: right;
+}
